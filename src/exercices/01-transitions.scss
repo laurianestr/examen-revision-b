@@ -43,10 +43,6 @@
   transition: transform 0.5s;
 }
 
-.article-title {
-  transition: transform 0.5s;
-}
-
 .article:hover .article-title {
   transform: scale(1.2);
   color: #1d3557;
