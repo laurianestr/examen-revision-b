@@ -7,6 +7,11 @@
     border-radius: 5px;
     color: #003566;
     box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+    animation-name: changeshadow;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
   }
 
   .loader {
@@ -18,5 +23,38 @@
     background: #ffbe0b;
     border-radius: 50px;
     color: #fff;
+    animation-name: changecolor;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes changeshadow {
+  0% {
+    border-radius: 5px;
+    background: #ffc300;
+    box-shadow: 0px 0px 4px 0px rgba(0, 53, 102, 0.25);
+  }
+
+  100% {
+    border-radius: 5px;
+    background: #ffc300;
+    box-shadow: 0px 0px 4px 6px rgba(0, 53, 102, 0.25);
+  }
+}
+
+@keyframes changecolor {
+  0% {
+    background: #ffbe0b;
+  }
+
+  50% {
+    background: #ff006e;
+  }
+
+  100% {
+    background: #8338ec;
   }
 }
